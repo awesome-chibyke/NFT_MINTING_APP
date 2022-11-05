@@ -1,4 +1,5 @@
 {
+  "homepage": "https://awesome-chibyke.github.io/NFT_MINTING_APP",
   "name": "nft-minter",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages - build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.6.0"
+    "dotenv": "^8.6.0",
+    "gh-pages": "^4.0.0"
   }
 }
