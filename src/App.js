@@ -1,5 +1,6 @@
-import './App.css';
-import Minter from './Minter'
+import "./App.css";
+import Minter from "./Minter";
+//import dotenv from "dotenv";
 
 function App() {
   return (

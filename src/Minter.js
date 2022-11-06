@@ -4,15 +4,15 @@ import {
   getCurrentWalletConnected,
   mintNFT,
 } from "./utils/interact.js";
-import { sendFileToIPFS } from "./utils/pinata.js";
 
 const Minter = (props) => {
   //State variables
+
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [url, setURL] = useState("");
+  //const [url, setURL] = useState("");
   const [fileImg, setFileImg] = useState(null);
 
   const connectWalletPressed = async () => {
@@ -38,7 +38,11 @@ const Minter = (props) => {
         <p>
           {" "}
           🦊{" "}
-          <a target="_blank" href={`https://metamask.io/download.html`}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={`https://metamask.io/download.html`}
+          >
             You must install Metamask, a virtual Ethereum wallet, in your
             browser.
           </a>
@@ -56,11 +60,14 @@ const Minter = (props) => {
     setFileImg(e.target.files[0]);
   };
 
-  useEffect(async () => {
+  useEffect(() => {
     //TODO: implement
-    const { address, status } = await getCurrentWalletConnected();
-    setWallet(address);
-    setStatus(status);
+    const callFunction = async () => {
+      const { address, status } = await getCurrentWalletConnected();
+      setWallet(address);
+      setStatus(status);
+    };
+    callFunction();
 
     addWalletListener();
   }, []);

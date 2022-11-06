@@ -1,4 +1,3 @@
-import { REACT_APP_PINATA_KEY, REACT_APP_PINATA_SECRET } from "./env";
 require("dotenv").config();
 
 const axios = require("axios");
@@ -9,8 +8,8 @@ export const pinJSONToIPFS = async (JSONBody) => {
   return axios
     .post(url, JSONBody, {
       headers: {
-        pinata_api_key: REACT_APP_PINATA_KEY,
-        pinata_secret_api_key: REACT_APP_PINATA_SECRET,
+        pinata_api_key: process.env.REACT_APP_PINATA_KEY,
+        pinata_secret_api_key: process.env.REACT_APP_PINATA_SECRET,
       },
     })
     .then(function (response) {
@@ -40,8 +39,8 @@ export const sendFileToIPFS = async (fileImg) => {
         url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
         data: formData,
         headers: {
-          pinata_api_key: `${REACT_APP_PINATA_KEY}`,
-          pinata_secret_api_key: `${REACT_APP_PINATA_SECRET}`,
+          pinata_api_key: `${process.env.REACT_APP_PINATA_KEY}`,
+          pinata_secret_api_key: `${process.env.REACT_APP_PINATA_SECRET}`,
           "Content-Type": "multipart/form-data",
         },
       });
