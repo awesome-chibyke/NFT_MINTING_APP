@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nft_minting_dapp/static/css/main.1d5c871e.chunk.css",
+    "main.css": "/nft_minting_dapp/static/css/main.7b4cb8fd.chunk.css",
     "main.js": "/nft_minting_dapp/static/js/main.287db18e.chunk.js",
     "main.js.map": "/nft_minting_dapp/static/js/main.287db18e.chunk.js.map",
     "runtime-main.js": "/nft_minting_dapp/static/js/runtime-main.885af7a1.js",
@@ -10,13 +10,13 @@
     "static/js/3.dce561fc.chunk.js": "/nft_minting_dapp/static/js/3.dce561fc.chunk.js",
     "static/js/3.dce561fc.chunk.js.map": "/nft_minting_dapp/static/js/3.dce561fc.chunk.js.map",
     "index.html": "/nft_minting_dapp/index.html",
-    "static/css/main.1d5c871e.chunk.css.map": "/nft_minting_dapp/static/css/main.1d5c871e.chunk.css.map",
+    "static/css/main.7b4cb8fd.chunk.css.map": "/nft_minting_dapp/static/css/main.7b4cb8fd.chunk.css.map",
     "static/js/2.4aac577c.chunk.js.LICENSE.txt": "/nft_minting_dapp/static/js/2.4aac577c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.885af7a1.js",
     "static/js/2.4aac577c.chunk.js",
-    "static/css/main.1d5c871e.chunk.css",
+    "static/css/main.7b4cb8fd.chunk.css",
     "static/js/main.287db18e.chunk.js"
   ]
 }
