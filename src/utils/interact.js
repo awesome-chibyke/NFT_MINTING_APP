@@ -7,7 +7,7 @@ const web3 = createAlchemyWeb3(process.env.REACT_APP_ALCHEMY_KEY);
 
 const contractABI = require("../contract-abi.json");
 const contractAddress = process.env.REACT_APP_DEPLOYED_CONTRACT_ADDRESS;
-console.log(contractAddress);
+
 export const connectWallet = async () => {
   if (window.ethereum) {
     try {
